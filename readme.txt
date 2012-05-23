@@ -69,6 +69,10 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 == Upgrade Notice ==
 
+= 1.0.1 =
+
+- Twitter Login now looks SUPER cool! Thanks to the folks @ Dribbble for that!
+
 = 1.0 =
 
 - Show time to next tweet!

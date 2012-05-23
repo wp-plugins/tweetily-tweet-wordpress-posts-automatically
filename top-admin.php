@@ -449,18 +449,19 @@ function top_admin() {
 
 <a href="https://twitter.com/themanagr" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @themanagr</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<br />
+<br /><br />
 
 				<form id="top_opt" name="top_TweetOldPost" action="" method="post">
 					<input type="hidden" name="top_opt_action" value="top_opt_update_settings" />
 					<fieldset class="options">
 						<div class="option">
-							<label for="top_opt_twitter_username">' . __('Your Twitter Account', 'Tweetily') . ':</label>
+							<label for="top_opt_twitter_username">' . __('', 'Tweetily') . '</label>
+
 
 <div id="profile-box">');
         if (!$settings["oauth_access_token"]) {
 
-            echo '<a href="' . top_get_auth_url() . '"><img src="' . $x . 'images/twitter.png" /></a>';
+            echo '<a href="' . top_get_auth_url() . '" class="auth-twitter">Sign in with Twitter</a>';
         } else {
             echo '<img class="avatar" src="' . $settings["profile_image_url"] . '" alt="" />
 							<h4>' . $settings["screen_name"] . '</h4>';
@@ -469,7 +470,7 @@ function top_admin() {
             }
             echo '<p>
 
-								Your account has  been authorized. <a href="' . $_SERVER["REQUEST_URI"] . '&top=deauthorize" onclick=\'return confirm("Are you sure you want to deauthorize your Twitter account?");\'>Click to deauthorize</a>.<br />
+								You\'re Connected! <a href="' . $_SERVER["REQUEST_URI"] . '&top=deauthorize" onclick=\'return confirm("Are you sure you want to deauthorize your Twitter account?");\'>Click here to deauthorize</a>.<br />
 
 							</p>
 
