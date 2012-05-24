@@ -843,23 +843,7 @@ showHashtagCustomField();
 showURLOptions();
 
 </script>');
-echo "<script type='text/javascript' src='".plugins_url('tooltip/js/Tooltip.js', __FILE__)."'></script>";
 
-echo '<div id="atip" style="background-color:ivory;
-	width: 150px;
- 	height: 49px;
-	border: solid 1px gray; 
-	text-align: left;"></div>';
-$jstipvar = file_get_contents(plugins_url('tooltip.txt', __FILE__));
-echo '<script>
-var t1=null;
-'.$jstipvar.'
-init();
-function init()
-{
- t1 = new ToolTip("atip",false);
-}
-</script>';
 
 echo "<script type='text/javascript' src='".plugins_url('countdown/jquery-1.7.1.min.js', __FILE__)."'></script>";
 
