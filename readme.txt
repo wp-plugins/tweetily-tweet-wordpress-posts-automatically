@@ -19,6 +19,13 @@ Tweetily is based on the plugin "Tweet Old Posts" by Ajay Matharuajay and has be
 
 For updates follow http://twitter.com/themanagr
 
+***Version 1.1***
+
+- Updated logging function.
+- Minor bug fixes.
+
+
+
 ***Version 1.0 - New Features!***
 
 - Show time to next tweet!
