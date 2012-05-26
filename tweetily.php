@@ -1,11 +1,11 @@
 <?php   
 #     /* 
 #     Plugin Name: Tweetily 
-#     Plugin URI: http://www.Tweetily.com/wordpress-plugin-tweet-old-posts/
-#     Description: Tweetily will tweet your posts automatically to keep driving traffic to your Web site!
-#     Author: Tweetily
+#     Plugin URI: http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
+#     Description: Tweetily will tweet Wordpress posts automatically to keep driving traffic to your Web site!
+#     Author: Flavio Martins
 #     Version: 1.0
-#     Author URI: http://www.tweetily.com/
+#     Author URI: http://www.themana.gr/
 #     */  
 
 
