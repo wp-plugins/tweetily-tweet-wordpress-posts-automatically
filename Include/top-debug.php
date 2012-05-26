@@ -31,7 +31,7 @@ class topDebug {
 
 	function enable( $enable_or_disable ) {
 		if ( $enable_or_disable ) {
-			$this->debug_file = fopen( WP_CONTENT_DIR . '/plugins/tweetily/log.txt', 'a+t' );
+			$this->debug_file = fopen( WP_CONTENT_DIR . '/plugins/tweetily-tweet-wordpress-posts-automatically/log.txt', 'a+t' );
 			$this->log_messages = 0;
 		} else if ( $this->debug_file ) {
 			fclose( $this->debug_file );
