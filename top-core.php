@@ -221,7 +221,7 @@ function top_opt_tweet_post($oldest_post) {
 
     if ($additional_text != "") {
         if ($additional_text_at == "end") {
-            $content = $content . ". " . $additional_text;
+            $content = $content . " - " . $additional_text;
         } elseif ($additional_text_at == "beginning") {
             $content = $additional_text . ": " . $content;
         }
