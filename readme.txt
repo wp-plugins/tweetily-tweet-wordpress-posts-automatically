@@ -5,7 +5,7 @@ Donate link: http://www.themana.gr/
 Tags: Tweetily, Tweet Posts, Twitter, Promote Posts, Auto Tweet, Post Tweets, Wordpress Twitter, Traffic, Auto Traffic, Tweet Old Post, Wordpress Twitter Plugin, Twitter Plugin, Tweet Selected Posts
 Requires at least: 2.7
 Tested up to: 3.3.2
-Stable tag: 1.1
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,12 @@ Tweetily is a plugin by Flavio Martins designed to tweet your Wordpress posts au
 Tweetily is based on the plugin "Tweet Old Posts" by Ajay Matharuajay and has been updated to work with additional features, bug fixes, and specifically works with site enabled with caching plugins.
 
 For updates follow http://twitter.com/themanagr
+
+***Version 2.0***
+
+- Re-worked the Twitter authorization system.
+- Added updated queries for those running W3 Total Cache
+
 
 ***Version 1.1***
 

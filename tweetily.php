@@ -4,7 +4,7 @@
 #     Plugin URI: http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 #     Description: Tweetily will tweet Wordpress posts automatically to keep driving traffic to your Web site!
 #     Author: Flavio Martins
-#     Version: 1.0
+#     Version: 2.0
 #     Author URI: http://www.themana.gr/
 #     */  
 
@@ -16,6 +16,7 @@ function as_tw_install() {
 	add_option( 'as_number_tweet', '1', '', 'yes' ); 
 	add_option( 'as_post_type', 'Post', '', 'yes' ); 
 	add_option( 'next_tweet_time', '0', '', 'yes' ); 
+	update_option( 'top_opt_admin_url', '', '', 'yes' );
 }
 
 add_action( 'admin_init', 'register_mysettings' );
