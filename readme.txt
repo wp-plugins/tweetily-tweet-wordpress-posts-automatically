@@ -9,7 +9,7 @@ Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Tweetily will automatically promote your posts or pages on Twitter to keep your content alive and drive traffic to your site. Just set it and forget it! Tweetily makes sharing your content a breeze!
+Tweetily will automatically promote your posts or pages on Twitter to keep your content alive and drive traffic to your site. Set it and forget it!
 
 == Description ==
 
@@ -24,7 +24,7 @@ Promoting and sharing your old content to your audience has never been easier. J
 - Choose the number of tweets to share.
 - Use hashtags to focus on topics.
 - Include links back to your site.
-- Excluse categories or specific posts.
+- Exclude categories or specific posts.
 
 
 Tweetily is the RELOADED version of the Tweet Old Post plugin by Ajay Matharuajay. It's been updated with new features, bug fixes, new Twitter connection, and is specifically designed to work with caching plugins.
@@ -35,7 +35,9 @@ Got comments or feature requests? Let's connect! http://twitter.com/themanagr
 ***Version 2.0***
 
 - Re-worked the Twitter authorization system.
-- Added updated queries for those running W3 Total Cache
+- Easy Twitter account connection.
+- Share new and old posts and pages.
+- Added updated queries for those running W3 Total Cache.
 
 
 ***Version 1.1***
@@ -81,7 +83,47 @@ Alternatively you can also follow the these steps to manually install the Tweeti
 
 == Frequently Asked Questions ==
 
+Why is this plugin free?
+-Ok, maybe you weren't thinking that. But let me tell you anyway. That's the spirit of the Internet. We contribute and make it a better place. If the Wordpress folks can release this awesome blog platform for free, the least I can do is contribute to make it the best blogging platform EVER!
+
+-I don't charge for this. I don't ask for donations. BUT...you can contribute with a TWITTER FOLLOW! Pretty please?!
+
+
+I can't authorize to Twitter! What gives?
+
+-Copy the URL address on your browser into the Tweetily Admin URL box, then update settings, then try to authorize again.
+-If that doesn't work, let me know! http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
+
+
+Can I have more than one Twitter account connected?
+
+-Right now, it's just supporting one Twitter account OAuth is tough enough with just one account, let alone two! Ahh!
+
+
+Can I post more than one item at a time?
+
+-Absolutely! You can select to tweet up to 10 posts at a time! WOW!
+
+
+But what about if I REALLY want to post more than 10 items? Can I do that?
+
+-More than 10? Are you nuts? This is borderline spamming your Twitter following! 
+-It's not recommended...BUT...if you really want to, on your Wordpress Dashboard, click PLUGINS > EDITOR > select TWEETILY > click on the file TOP-CORE.PHP, find the line $as_number_tweet = 10; and change the number 10 to the maximum number of tweets you want.
+
+
+Wow, just like that? 
+
+-Yes, just like that. But I'll caution you. Twitter limits you to only certain number of tweet actions per time period so you'll be close to hitting your limit. Hitting the limit is a red flag. There, I've said it. I'm done.
+
+
+Do you have plans to add more to this?
+
+-You bet I do! I'm actually taking input from people on features, changes, etc. Really anything that would make it better. Just contact me and let me know.
+
+
 If you have any questions, submit a comment online at: http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
+
+
 
 == Screenshots ==
 
@@ -109,7 +151,18 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 == Changelog ==
 
-**New in v1.0**
+***Version 2.0***
+
+- Re-worked the Twitter authorization system.
+- Added updated queries for those running W3 Total Cache.
+- Fixed issue with additional text characters for SEO.
+
+***Version 1.1***
+
+- Updated logging function.
+- Minor bug fixes.
+
+**Version 1.0**
 
 - Show time to next tweet!
 - Updated sleep time!
