@@ -2,22 +2,35 @@
 Author: Flavio Martins
 Contributors: themanagr
 Donate link: http://www.themana.gr/
-Tags: Tweetily, Tweet Posts, Twitter, Promote Posts, Auto Tweet, Post Tweets, Wordpress Twitter, Traffic, Auto Traffic, Tweet Old Post, Wordpress Twitter Plugin, Twitter Plugin, Tweet Selected Posts
+Tags: Tweetily, Tweet Posts, Twitter, Promote Posts, Tweet Random Post, Share Post, Promote Post, Auto Tweet, Post Tweets, Wordpress Twitter, Traffic, Auto Traffic, Tweet Old Post, Wordpress Twitter Plugin, Twitter Plugin, Tweet Selected Posts
 Requires at least: 2.7
 Tested up to: 3.3.2
 Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Tweetily by Flavio Martins automatically shares your Wordpress posts on Twitter to keep old post alive and driving traffic to your Wordpress site.
+Tweetily will automatically promote your posts or pages on Twitter to keep your content alive and drive traffic to your site. Just set it and forget it! Tweetily makes sharing your content a breeze!
 
 == Description ==
 
-Tweetily is a plugin by Flavio Martins designed to tweet your Wordpress posts automatically to drive traffic to your Wordpress site. Tweetily promotes your older content automatically to keep visitors coming back to your site.
+Tweetily, by Flavio Martins, will randomly select a post or page and tweet it automatically to drive traffic to your site. You set the time, number of tweets, and the type of content to share and Tweetily will do the rest.
 
-Tweetily is based on the plugin "Tweet Old Posts" by Ajay Matharuajay and has been updated to work with additional features, bug fixes, and specifically works with site enabled with caching plugins.
+Promoting and sharing your old content to your audience has never been easier. Just set it and let Tweetily do the rest! 
 
-For updates follow http://twitter.com/themanagr
+- Easy Twitter account connection.
+- Share new and old posts and pages.
+- Countdown shows you the next tweet time.
+- Choose the time between tweets.
+- Choose the number of tweets to share.
+- Use hashtags to focus on topics.
+- Include links back to your site.
+- Excluse categories or specific posts.
+
+
+Tweetily is the RELOADED version of the Tweet Old Post plugin by Ajay Matharuajay. It's been updated with new features, bug fixes, new Twitter connection, and is specifically designed to work with caching plugins.
+
+Got comments or feature requests? Let's connect! http://twitter.com/themanagr
+
 
 ***Version 2.0***
 
