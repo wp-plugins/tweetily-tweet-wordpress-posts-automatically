@@ -294,13 +294,13 @@ function top_opt_tweet_post($oldest_post) {
         $poststatus = top_update_status($message);
         if ($poststatus == true)
         {
-            return "Whoopie!!! Tweet Posted Successfully";
+            return "Success! Just tweeted successfully.";
         }
         else {
-            return "OOPS!!! there seems to be some problem while tweeting. Please try again.";
+            return "Oh no! Something went wrong. Please try again.";
         }
     }
-    return "OOPS!!! there seems to be some problem while tweeting. Try again. If problem is persistent mail the problem at support@tweetily.com";
+    return "Oh no! Looks like there are problems. Please email flavio@themana.gr.";
 }
 
 //send request to passed url and return the response

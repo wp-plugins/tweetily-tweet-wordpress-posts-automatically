@@ -5,7 +5,7 @@ Donate link: http://www.themana.gr/
 Tags: Tweetily, Tweet Posts, Twitter, Promote Posts, Tweet Random Post, Share Post, Promote Post, Auto Tweet, Post Tweets, Wordpress Twitter, Traffic, Auto Traffic, Tweet Old Post, Wordpress Twitter Plugin, Twitter Plugin, Tweet Selected Posts
 Requires at least: 2.7
 Tested up to: 3.3.2
-Stable tag: 2.1
+Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,14 @@ Tweetily is the RELOADED version of the Tweet Old Post plugin by Ajay Matharuaja
 
 Got comments or feature requests? Let's connect! http://twitter.com/themanagr
 
+***Version 2.2***
+
+- More caching plugin fixes.
+- More custom Web hosting company setup workarounds.
+
+***Version 2.1***
+
+-More authorization fixes and options for certain Web hosting providers.
 
 ***Version 2.0***
 
@@ -39,13 +47,10 @@ Got comments or feature requests? Let's connect! http://twitter.com/themanagr
 - Share new and old posts and pages.
 - Added updated queries for those running W3 Total Cache.
 
-
 ***Version 1.1***
 
 - Updated logging function.
 - Minor bug fixes.
-
-
 
 ***Version 1.0 - New Features!***
 
@@ -137,6 +142,15 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 == Upgrade Notice ==
 
+= 2.2 =
+
+- More caching plugin fixes.
+- More custom Web hosting company setup workarounds.
+
+= 2.1 =
+
+- Tons of tweaks and authorization process fixes for different Web hosting providers and their custom setups.
+
 = 1.0.1 =
 
 - Twitter Login now looks SUPER cool! Thanks to the folks @ Dribbble for that!
@@ -150,6 +164,16 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 
 == Changelog ==
+
+***Version 2.2***
+
+- More caching plugin fixes.
+- More custom Web hosting company setup workarounds.
+
+***Version 2.1***
+
+- Added more authentication changes to accomodate some Web hosting providers with a custom setup.
+- Fixed several potential "can't authorize" errors.
 
 ***Version 2.0***
 

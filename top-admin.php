@@ -294,8 +294,11 @@ function top_admin() {
 
 	//set up data into fields from db
         	global $wpdb;
-        //Current URL - updated querie for those with caching plugins
-		$admin_url = $wpdb->get_var("select option_value from wp_options where option_name = 'top_opt_admin_url';");
+
+		$admin_url = site_url('/wp-admin/admin.php?page=Tweetily');        	
+
+		//Current URL - updated querie for those with caching plugins
+		//$admin_url = $wpdb->get_var("select option_value from wp_options where option_name = 'top_opt_admin_url';");
         	//$admin_url = get_option('top_opt_admin_url');
         
         if (!isset($admin_url)) {
