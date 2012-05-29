@@ -13,10 +13,11 @@
 register_activation_hook( __FILE__, 'as_tw_install' );
 
 function as_tw_install() {
+	$admin_url = site_url('/wp-admin/admin.php?page=Tweetily');
 	add_option( 'as_number_tweet', '1', '', 'yes' ); 
 	add_option( 'as_post_type', 'Post', '', 'yes' ); 
 	add_option( 'next_tweet_time', '0', '', 'yes' ); 
-	update_option( 'top_opt_admin_url', '', '', 'yes' );
+	update_option( 'top_opt_admin_url', $admin_url, '', 'yes' );
 }
 
 add_action( 'admin_init', 'register_mysettings' );
@@ -49,6 +50,9 @@ define('top_opt_TWEET_PREFIX',"");
 define('top_opt_ADD_DATA',"false");
 define('top_opt_URL_SHORTENER',"is.gd");
 define('top_opt_HASHTAGS',"");
+
+$admin_url = site_url('/wp-admin/admin.php?page=Tweetily');
+define('top_opt_admin_url',$admin_url);
 
 global $top_db_version;
 $top_db_version = "1.0";
