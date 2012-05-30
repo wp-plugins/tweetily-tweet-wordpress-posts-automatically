@@ -445,7 +445,7 @@ function top_to_update() {
     
     
     $passed = time() - $last;
-    $wpdb->query("insert into wp_timetable (time,last,ret,url) values('".time()."',$last,$passed,'".$_SERVER['PHP_SELF']."');");
+    //$wpdb->query("insert into wp_timetable (time,last,ret,url) values('".time()."',$last,$passed,'".$_SERVER['PHP_SELF']."');");
 
     $interval = $interval * 60 * 60;
     $slop = $slop * 60 * 60;
