@@ -5,7 +5,7 @@ Donate link: http://www.themana.gr/
 Tags: Tweetily, Tweet Posts, Twitter, Promote Posts, Tweet Random Post, Share Post, Promote Post, Auto Tweet, Post Tweets, Wordpress Twitter, Traffic, Auto Traffic, Tweet Old Post, Wordpress Twitter Plugin, Twitter Plugin, Tweet Selected Posts
 Requires at least: 2.7
 Tested up to: 3.3.2
-Stable tag: 2.2
+Stable tag: 2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,7 +29,15 @@ Promoting and sharing your old content to your audience has never been easier. J
 
 Tweetily is the RELOADED version of the Tweet Old Post plugin by Ajay Matharuajay. It's been updated with new features, bug fixes, new Twitter connection, and is specifically designed to work with caching plugins.
 
-Got comments or feature requests? Let's connect! http://twitter.com/themanagr
+I'd love to hear your thoughts or ideas! http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
+
+Want to get in touch right away? Let's connect! http://twitter.com/themanagr
+
+*** Version 2.3 ***
+
+- More code cleanup.
+- Removed testing code that caused problems with some Web hosts.
+- Tweaks to authentication for 1and1 Web hosting accounts.
 
 ***Version 2.2***
 
@@ -89,6 +97,7 @@ Alternatively you can also follow the these steps to manually install the Tweeti
 == Frequently Asked Questions ==
 
 Why is this plugin free?
+
 -Ok, maybe you weren't thinking that. But let me tell you anyway. That's the spirit of the Internet. We contribute and make it a better place. If the Wordpress folks can release this awesome blog platform for free, the least I can do is contribute to make it the best blogging platform EVER!
 
 -I don't charge for this. I don't ask for donations. BUT...you can contribute with a TWITTER FOLLOW! Pretty please?!
@@ -97,6 +106,7 @@ Why is this plugin free?
 I can't authorize to Twitter! What gives?
 
 -Copy the URL address on your browser into the Tweetily Admin URL box, then update settings, then try to authorize again.
+
 -If that doesn't work, let me know! http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 
@@ -113,6 +123,7 @@ Can I post more than one item at a time?
 But what about if I REALLY want to post more than 10 items? Can I do that?
 
 -More than 10? Are you nuts? This is borderline spamming your Twitter following! 
+
 -It's not recommended...BUT...if you really want to, on your Wordpress Dashboard, click PLUGINS > EDITOR > select TWEETILY > click on the file TOP-CORE.PHP, find the line $as_number_tweet = 10; and change the number 10 to the maximum number of tweets you want.
 
 
@@ -142,6 +153,12 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 == Upgrade Notice ==
 
+= 2.3 =
+
+- More code cleanup.
+- Removed testing code that caused problems with some Web hosts.
+- Tweaks to authentication for 1and1 Web hosting accounts.
+
 = 2.2 =
 
 - More caching plugin fixes.
@@ -164,6 +181,13 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 
 == Changelog ==
+
+***Version 2.3***
+
+- More code cleanup.
+- Removed testing code that caused problems with some Web hosts.
+- Tweaks to authentication for 1and1 Web hosting accounts. 
+
 
 ***Version 2.2***
 
