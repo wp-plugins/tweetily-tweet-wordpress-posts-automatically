@@ -493,10 +493,7 @@ function top_admin() {
 						<label style="margin-left:40px;"><strong>Next Tweet coming in:</strong></label>
 						<div id="defaultCountdown" style="width:20%;margin-left:15%;margin-bottom:40px;"></div>
 						</div>
-                                                <div class="option">
-							<label for="top_opt_admin_url">' . __('Your Tweetily Plugin Admin URL', 'Tweetily') . ':</label>
-							<input type="text" style="width:500px" id="top_opt_admin_url" value="' . $admin_url . '" name="top_opt_admin_url" /><br /><strong>(Note: If this does not show your current URL in this textbox, paste the current URL in this textbox, then click "Update Options".)</strong>  
-						</div>
+						
 						<div class="option" >
 							<label for="top_opt_tweet_type" >' . __('Tweet Content:<br /><span class="desc">What do you want to share?<span>', 'Tweetily') . '</label>
 							<select id="top_opt_tweet_type" name="top_opt_tweet_type" style="width:150px">
@@ -669,7 +666,10 @@ function top_admin() {
 								</div>
 					</fieldset>
 					
-                                                
+                    	<div class="option">
+							<label for="top_opt_admin_url">' . __('Your Tweetily Plugin Admin URL', 'Tweetily') . ':</label>
+							<input type="text" style="width:500px" id="top_opt_admin_url" value="' . $admin_url . '" name="top_opt_admin_url" /><br /><strong>(Note: If this does not show your current URL in this textbox, paste the current URL in this textbox, then click "Update Options".)</strong>  
+						</div>                  
 
                                                 
 						<p class="submit"><input type="submit" name="submit" onclick="javascript:return validate()" value="' . __('Update Tweetily Options', 'Tweetily') . '" />
