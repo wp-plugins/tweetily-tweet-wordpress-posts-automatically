@@ -421,7 +421,7 @@ function top_opt_update_time() {
 function top_to_update() {
     global $wpdb;
     //have to use normal query to prevent the caching plug-in from caching the last update time
-    $last  = $wpdb->get_var("select option_value from wp_options where option_name = 'top_opt_last_update';");
+    $last  = $wpdb->get_var("select option_value from $wpdb->options where option_name = 'top_opt_last_update';");
     //$last = get_option('top_opt_last_update');
     $interval = get_option('top_opt_interval');
     $slop = get_option('top_opt_interval_slop');
@@ -445,7 +445,8 @@ function top_to_update() {
     
     
     $passed = time() - $last;
-    //$wpdb->query("insert into wp_timetable (time,last,ret,url) values('".time()."',$last,$passed,'".$_SERVER['PHP_SELF']."');");
+    	//old testing code to test the actual values going into the DB
+	//$wpdb->query("insert into wp_timetable (time,last,ret,url) values('".time()."',$last,$passed,'".$_SERVER['PHP_SELF']."');");
 
     $interval = $interval * 60 * 60;
     $slop = $slop * 60 * 60;

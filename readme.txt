@@ -5,7 +5,7 @@ Donate link: http://www.themana.gr/
 Tags: Tweetily, Tweet Posts, Twitter, Promote Posts, Tweet Random Post, Share Post, Promote Post, Auto Tweet, Post Tweets, Wordpress Twitter, Traffic, Auto Traffic, Tweet Old Post, Wordpress Twitter Plugin, Twitter Plugin, Tweet Selected Posts
 Requires at least: 2.7
 Tested up to: 3.3.2
-Stable tag: 2.3
+Stable tag: 2.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,12 @@ Tweetily is the RELOADED version of the Tweet Old Post plugin by Ajay Matharuaja
 I'd love to hear your thoughts or ideas! http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 Want to get in touch right away? Let's connect! http://twitter.com/themanagr
+
+*** Version 2.3.1***
+
+- Now works with hosts that secure database tables with random strings for security.
+- Specifically Dreamhost Web hosting or custom Wordpress secure Wordpress setups.
+- Moved the Tweetily Admin URL location.
 
 *** Version 2.3 ***
 
@@ -153,6 +159,12 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 == Upgrade Notice ==
 
+= 2.3.1 =
+
+- Now works with hosts that secure database tables with random strings for security.
+- Specifically Dreamhost Web hosting or custom Wordpress secure Wordpress setups.
+- Moved the Tweetily Admin URL location.
+
 = 2.3 =
 
 - More code cleanup.
@@ -181,6 +193,12 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 
 == Changelog ==
+
+***Version 2.3.1***
+
+- Now works with hosts that secure database tables with random strings for security.
+- Specifically Dreamhost Web hosting or custom Wordpress secure Wordpress setups.
+- Moved the Tweetily Admin URL location.
 
 ***Version 2.3***
 
