@@ -3,6 +3,15 @@
 require_once( 'Include/top-oauth.php' );
 global $top_oauth;
 $top_oauth = new TOPOAuth;
+
+if ( function_exists('w3tc_pgcache_flush') ) {
+w3tc_pgcache_flush();
+w3tc_dbcache_flush();
+w3tc_minify_flush();
+w3tc_objectcache_flush();
+$cache = ' and W3TC Caches cleared';
+}
+
 function top_tweet_old_post() {
 //check last tweet time against set interval and span
     if (top_opt_update_time()) {
@@ -130,6 +139,9 @@ if($as_post_type!='all'){
            return "No post found to tweet. Please check your settings and try again."; 
         }
     }
+
+
+
     if(isset($oldest_post)){
 		 $ret = '';
 		 foreach($oldest_post as $k=>$odp){
@@ -137,6 +149,15 @@ if($as_post_type!='all'){
          	    $ret .= 'Tweet '.$k.' : '.top_opt_tweet_post($odp->ID).'<br/>';
 		}
                 update_option('top_opt_tweeted_posts', $top_opt_tweeted_posts);
+
+if ( function_exists('w3tc_pgcache_flush') ) {
+w3tc_pgcache_flush();
+w3tc_dbcache_flush();
+w3tc_minify_flush();
+w3tc_objectcache_flush();
+$cache = ' and W3TC Caches cleared';
+}
+
 		$next_tweet_time = time()+ get_option('top_opt_interval') * 60 * 60;
 		update_option('next_tweet_time', $next_tweet_time);
 
@@ -418,11 +439,19 @@ function top_opt_update_time() {
     
 }
 
+if ( function_exists('w3tc_pgcache_flush') ) {
+w3tc_pgcache_flush();
+w3tc_dbcache_flush();
+w3tc_minify_flush();
+w3tc_objectcache_flush();
+$cache = ' and W3TC Caches cleared';
+}
+
 function top_to_update() {
     global $wpdb;
     //have to use normal query to prevent the caching plug-in from caching the last update time
-    $last  = $wpdb->get_var("select option_value from $wpdb->options where option_name = 'top_opt_last_update';");
-    //$last = get_option('top_opt_last_update');
+    $last  = $wpdb->get_var("select SQL_NO_CACHE option_value from $wpdb->options where option_name = 'top_opt_last_update';");
+    //$last_test = get_option('top_opt_last_update');
     $interval = get_option('top_opt_interval');
     $slop = get_option('top_opt_interval_slop');
 
@@ -559,5 +588,9 @@ update_option('top_opt_url_shortener','is.gd');
 update_option('top_opt_use_inline_hashtags','');
 update_option('top_opt_use_url_shortner','');
 }
+
+
+
+
 
 ?>

@@ -4,8 +4,8 @@ Contributors: themanagr
 Donate link: http://www.themana.gr/
 Tags: Tweetily, Tweet Posts, Twitter, Promote Posts, Tweet Random Post, Share Post, Promote Post, Auto Tweet, Post Tweets, Wordpress Twitter, Traffic, Auto Traffic, Tweet Old Post, Wordpress Twitter Plugin, Twitter Plugin, Tweet Selected Posts
 Requires at least: 2.7
-Tested up to: 3.3.2
-Stable tag: 2.3.1
+Tested up to: 3.4.1
+Stable tag: 3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,7 +33,12 @@ I'd love to hear your thoughts or ideas! http://www.themana.gr/tweetily-tweet-wo
 
 Want to get in touch right away? Let's connect! http://twitter.com/themanagr
 
-*** Version 2.3.1***
+*** Version 3.0 ***
+
+- Fixes for the tweet flooding issue when W3 Total Cache is enabled.
+- Minor bug fixes and improvements.
+
+*** Version 2.3.1 ***
 
 - Now works with hosts that secure database tables with random strings for security.
 - Specifically Dreamhost Web hosting or custom Wordpress secure Wordpress setups.
@@ -45,28 +50,28 @@ Want to get in touch right away? Let's connect! http://twitter.com/themanagr
 - Removed testing code that caused problems with some Web hosts.
 - Tweaks to authentication for 1and1 Web hosting accounts.
 
-***Version 2.2***
+*** Version 2.2 ***
 
 - More caching plugin fixes.
 - More custom Web hosting company setup workarounds.
 
-***Version 2.1***
+*** Version 2.1 ***
 
 -More authorization fixes and options for certain Web hosting providers.
 
-***Version 2.0***
+*** Version 2.0 ***
 
 - Re-worked the Twitter authorization system.
 - Easy Twitter account connection.
 - Share new and old posts and pages.
 - Added updated queries for those running W3 Total Cache.
 
-***Version 1.1***
+*** Version 1.1 ***
 
 - Updated logging function.
 - Minor bug fixes.
 
-***Version 1.0 - New Features!***
+*** Version 1.0 - New Features! ***
 
 - Show time to next tweet!
 - Updated sleep time!
@@ -159,6 +164,13 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 == Upgrade Notice ==
 
+= 3.0 =
+
+- Fixes for the tweet flooding issue when W3 Total Cache is enabled.
+- Minor bug fixes and improvements.
+- Tweaks for GoDaddy hosting accounts.
+- Tweaks for multi-author blogs.
+
 = 2.3.1 =
 
 - Now works with hosts that secure database tables with random strings for security.
@@ -193,6 +205,13 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 
 == Changelog ==
+
+***Version 3.0***
+
+- Fixes for the tweet flooding issue when W3 Total Cache is enabled.
+- Minor bug fixes and improvements.
+- Tweaks for GoDaddy hosting accounts.
+- Tweaks for multi-author blogs.
 
 ***Version 2.3.1***
 

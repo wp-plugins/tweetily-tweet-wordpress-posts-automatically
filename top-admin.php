@@ -217,9 +217,10 @@ function top_admin() {
                     update_option('top_opt_interval', "4");
                 }
             }
-			$next_tweet_time = time()+ get_option('top_opt_interval') * 60 * 60;
-			update_option('next_tweet_time', $next_tweet_time);
 			
+		$next_tweet_time = time()+ get_option('top_opt_interval') * 60 * 60;
+		update_option('next_tweet_time', $next_tweet_time);
+
             //random interval
             if (isset($_POST['top_opt_interval_slop'])) {
                 if (is_numeric($_POST['top_opt_interval_slop']) && $_POST['top_opt_interval_slop'] > 0) {
@@ -641,6 +642,8 @@ function top_admin() {
 						
 						<div class="option">
 						<label class="ttip">Select post type: <span class="desc">What type of items do you want to share?<span></label>
+
+
 						<select name="as_post_type">
 							<option value="post">Only Posts</option>
 							<option value="page">Only Pages</option>
