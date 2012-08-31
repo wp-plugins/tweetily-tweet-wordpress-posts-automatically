@@ -5,7 +5,7 @@ Donate link: http://www.themana.gr/
 Tags: Tweetily, Tweet Posts, Twitter, Promote Posts, Tweet Random Post, Share Post, Promote Post, Auto Tweet, Post Tweets, Wordpress Twitter, Traffic, Auto Traffic, Tweet Old Post, Wordpress Twitter Plugin, Twitter Plugin, Tweet Selected Posts
 Requires at least: 2.7
 Tested up to: 3.4.1
-Stable tag: 3.0
+Stable tag: 3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,7 +33,7 @@ I'd love to hear your thoughts or ideas! http://www.themana.gr/tweetily-tweet-wo
 
 Want to get in touch right away? Let's connect! http://twitter.com/themanagr
 
-*** Version 3.0 ***
+*** Version 3.1 ***
 
 - Fixes for the tweet flooding issue when W3 Total Cache is enabled.
 - Minor bug fixes and improvements.
@@ -164,7 +164,7 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 == Upgrade Notice ==
 
-= 3.0 =
+= 3.1 =
 
 - Fixes for the tweet flooding issue when W3 Total Cache is enabled.
 - Minor bug fixes and improvements.
@@ -206,7 +206,7 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 == Changelog ==
 
-***Version 3.0***
+***Version 3.1***
 
 - Fixes for the tweet flooding issue when W3 Total Cache is enabled.
 - Minor bug fixes and improvements.
