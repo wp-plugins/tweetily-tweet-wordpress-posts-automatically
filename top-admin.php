@@ -450,10 +450,10 @@ function top_admin() {
 
         print('
 			<div class="wrap">
-				<h2>' . __('Tweetily - Tweet WP Posts Automatically by - ', 'Tweetily') . ' <a href="http://www.themana.gr">Flavio Martins</a></h2>
-<h3>If you like this plugin, follow <a href="http://www.twitter.com/themanagr">@themanagr</a> on Twitter to help keep this plugin free...FOREVER!</h3>
+				<h2>' . __('Tweetily - Tweet WP Posts Automatically by - ', 'Tweetily') . ' <a href="http://thecustomerservicemanager.com">Flavio Martins</a></h2>
+<h3>If you like this plugin, follow <a href="http://www.twitter.com/flavmartins">@flavmartins</a> on Twitter to help keep this plugin free...FOREVER!</h3>
 
-<a href="https://twitter.com/themanagr" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @themanagr</a>
+<a href="https://twitter.com/flavmartins" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @flavmartins</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <br /><br />
 
