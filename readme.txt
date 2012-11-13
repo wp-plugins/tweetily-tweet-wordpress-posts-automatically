@@ -1,11 +1,11 @@
 === Tweetily - Tweet Your Posts Automatically! ===
 Author: Flavio Martins
 Contributors: themanagr
-Donate link: http://www.themana.gr/
+Donate link: http://thecustomerservicemanager.com/
 Tags: Tweetily, Tweet Posts, Twitter, Promote Posts, Tweet Random Post, Share Post, Promote Post, Auto Tweet, Post Tweets, Wordpress Twitter, Traffic, Auto Traffic, Tweet Old Post, Wordpress Twitter Plugin, Twitter Plugin, Tweet Selected Posts
 Requires at least: 2.7
-Tested up to: 3.4.1
-Stable tag: 3.1
+Tested up to: 3.4.2
+Stable tag: 3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,9 +29,15 @@ Promoting and sharing your old content to your audience has never been easier. J
 
 Tweetily is the RELOADED version of the Tweet Old Post plugin by Ajay Matharuajay. It's been updated with new features, bug fixes, new Twitter connection, and is specifically designed to work with caching plugins.
 
-I'd love to hear your thoughts or ideas! http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
+I'd love to hear your thoughts or ideas! http://thecustomerservicemanager.com/tweetily-tweet-wordpress-post-automatically/
 
-Want to get in touch right away? Let's connect! http://twitter.com/themanagr
+Want to get in touch right away? Let's connect! http://twitter.com/flavmartins
+
+*** Version 3.2 ***
+
+- Small bug fixes for some who never found posts to tweet.
+- Made more compatible with latest version of Wordpress.
+- Updated code to run leaner and meaner.
 
 *** Version 3.1 ***
 
@@ -79,7 +85,7 @@ Want to get in touch right away? Let's connect! http://twitter.com/themanagr
 - Works with caching plugins! (WP Super Cache & W3 Total Cache)
 
 *If you have suggestions that you want included, let me know!
-	-http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
+	-http://thecustomerservicemanager.com/tweetily-tweet-wordpress-post-automatically/
 
 
 == Installation ==
@@ -118,7 +124,7 @@ I can't authorize to Twitter! What gives?
 
 -Copy the URL address on your browser into the Tweetily Admin URL box, then update settings, then try to authorize again.
 
--If that doesn't work, let me know! http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
+-If that doesn't work, let me know! http://thecustomerservicemanager.com/tweetily-tweet-wordpress-post-automatically/
 
 
 Can I have more than one Twitter account connected?
@@ -148,7 +154,7 @@ Do you have plans to add more to this?
 -You bet I do! I'm actually taking input from people on features, changes, etc. Really anything that would make it better. Just contact me and let me know.
 
 
-If you have any questions, submit a comment online at: http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
+If you have any questions, submit a comment online at: http://thecustomerservicemanager.com/tweetily-tweet-wordpress-post-automatically/
 
 
 
@@ -160,9 +166,15 @@ If you have any questions, submit a comment online at: http://www.themana.gr/twe
 
 For more screenshots you can check out:
 
-http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
+http://thecustomerservicemanager.com/tweetily-tweet-wordpress-post-automatically/
 
 == Upgrade Notice ==
+
+= 3.2 =
+
+- Small bug fixes for those who never found posts to tweet.
+- Updated to be more compatible with latest version of Wordpress.
+- Runs leaner, meaner, and takes up even less resources on your system.
 
 = 3.1 =
 
@@ -205,6 +217,12 @@ http://www.themana.gr/tweetily-tweet-wordpress-post-automatically/
 
 
 == Changelog ==
+
+***Version 3.2***
+
+- Small bug fixes for those who never found posts to tweet.
+- Updated to be more compatible with latest version of Wordpress.
+- Runs leaner, meaner, and takes up less system resources.
 
 ***Version 3.1***
 
