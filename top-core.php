@@ -88,6 +88,7 @@ if($as_number_tweet>10){$as_number_tweet = 10;}
 
 //trying to fix multiposts
 //if($last<1){$as_number_tweet = 0;}
+$pt='';
 if($as_post_type!='all'){
 	$pt = "post_type = '$as_post_type' AND";
 }
@@ -95,7 +96,7 @@ if($as_post_type!='all'){
             FROM $wpdb->posts
             WHERE $pt post_status = 'publish' ";
     
-    if(is_numeric($ageLimit))
+   if(is_numeric($ageLimit))
     {
         if($ageLimit > 0)
                 $sql = $sql . " AND post_date <= curdate( ) - INTERVAL " . $ageLimit . " day";
@@ -117,7 +118,7 @@ if($as_post_type!='all'){
         $sql = $sql . " AND ID Not IN (" . $already_tweeted . ") ";
     }
     }
-    if ($omitCats != '') {
+   if ($omitCats != '') {
         $sql = $sql . " AND NOT (ID IN (SELECT tr.object_id FROM " . $wpdb->prefix . "term_relationships AS tr INNER JOIN " . $wpdb->prefix . "term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy = 'category' AND tt.term_id IN (" . $omitCats . ")))";
     }
     $sql = $sql . "
@@ -136,7 +137,7 @@ if($as_post_type!='all'){
         }
         else
         {
-           return "No post found to tweet. Please check your settings and try again."; 
+           return "No post found to tweet. Please check your settings and try again.--".$sql; 
         }
     }
 
