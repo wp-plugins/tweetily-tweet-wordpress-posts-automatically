@@ -43,8 +43,8 @@ define ('top_opt_72_HOURS', 72*top_opt_1_HOUR);
 define ('top_opt_168_HOURS', 168*top_opt_1_HOUR); 
 define ('top_opt_INTERVAL', 4);
 define ('top_opt_INTERVAL_SLOP', 4);
-define ('top_opt_AGE_LIMIT', 30); // 120 days
-define ('top_opt_MAX_AGE_LIMIT', 60); // 120 days
+define ('top_opt_AGE_LIMIT', 0); // 120 days
+define ('top_opt_MAX_AGE_LIMIT', 0); // 120 days
 define ('top_opt_OMIT_CATS', "");
 define('top_opt_TWEET_PREFIX',"");
 define('top_opt_ADD_DATA',"false");
@@ -75,9 +75,9 @@ $top_db_version = "1.0";
             if ( isset( $_REQUEST['oauth_token'] ) ) {
 			    $auth_url= str_replace('oauth_token', 'oauth_token1', top_currentPageURL());
 				$top_url = get_option('top_opt_admin_url') . substr($auth_url,strrpos($auth_url, "page=Tweetily") + strlen("page=Tweetily"));
-                echo '<script language="javascript">window.open ("'.$top_url.'","_self")</script>';
+                /*echo '<script language="javascript">window.open ("'.$top_url.'","_self")</script>';
                 
-                die;
+                die;*/
             }
         
         }
