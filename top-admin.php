@@ -221,14 +221,7 @@ function top_admin() {
 		$next_tweet_time = time()+ get_option('top_opt_interval') * 60 * 60;
 		update_option('next_tweet_time', $next_tweet_time);
 
-            //random interval
-            if (isset($_POST['top_opt_interval_slop'])) {
-                if (is_numeric($_POST['top_opt_interval_slop']) && $_POST['top_opt_interval_slop'] > 0) {
-                    update_option('top_opt_interval_slop', $_POST['top_opt_interval_slop']);
-                } else {
-                    update_option('top_opt_interval_slop', "4");
-                }
-            }
+           
 
             //minimum post age to tweet
             if (isset($_POST['top_opt_age_limit'])) {
@@ -413,10 +406,7 @@ function top_admin() {
         }
 
         //random interval
-        $slop = get_option('top_opt_interval_slop');
-        if (!(isset($slop) && is_numeric($slop))) {
-            $slop = top_opt_INTERVAL_SLOP;
-        }
+       
 
         //min age limit
         $ageLimit = get_option('top_opt_age_limit');
@@ -611,11 +601,7 @@ function top_admin() {
 							<input type="text" id="top_opt_interval" maxlength="5" value="' . $interval . '" name="top_opt_interval" /> Hour / Hours <strong>(If 0, it will default to 4 hours.)</strong>
                                                        
 						</div>
-						<div class="option" >
-							<label for="top_opt_interval_slop">' . __('Random Time Added: <br /><span class="desc">Random time added to make your post normal.<span>', 'Tweetily') . '</label>
-							<input type="text" id="top_opt_interval_slop" maxlength="5" value="' . $slop . '" name="top_opt_interval_slop" /> Hour / Hours <strong>(If 0, it will default to 4 hours.)</strong>
-                                                            
-						</div>
+						
 						<div class="option" >
 							<label for="top_opt_age_limit">' . __('Minimum age of post: <br /><span class="desc">Include post in tweets if at least this age.<span>', 'Tweetily') . '</label>
 							<input type="text" id="top_opt_age_limit" maxlength="5" value="' . $ageLimit . '" name="top_opt_age_limit" /> Day / Days
@@ -736,12 +722,7 @@ function validate()
 		document.getElementById("top_opt_interval").focus();
 		return false;
         }
-         if(trim(document.getElementById("top_opt_interval_slop").value) != "" && !isNumber(trim(document.getElementById("top_opt_interval_slop").value)))
-        {
-            alert("Enter only numeric in Random interval");
-		document.getElementById("top_opt_interval_slop").focus();
-		return false;
-        }
+        
         if(trim(document.getElementById("top_opt_age_limit").value) != "" && !isNumber(trim(document.getElementById("top_opt_age_limit").value)))
         {
             alert("Enter only numeric in Minimum age of post");
@@ -902,3 +883,4 @@ function top_opt_head_admin() {
 }
 
 ?>
+

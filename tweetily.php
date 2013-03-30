@@ -4,7 +4,7 @@
      Plugin URI: http://thecustomerservicemanager.com/tweetily-tweet-wordpress-post-automatically/
      Description: Tweetily will periodically tweet a random post or page automatically to promote your content and drive traffic to your Web site! You set the time, number of tweets, and just let Tweetily do the rest! For questions, comments, or feature requests, contact me! <a href="http://thecustomerservicemanager.com/">http://thecustomerservicemanager.com</a>.
      Author: Flavio Martins
-     Version: 3.2
+     Version: 3.4
      Author URI: http://thecustomerservicemanager.com/
     */  
 
