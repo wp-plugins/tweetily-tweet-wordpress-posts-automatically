@@ -221,7 +221,14 @@ function top_admin() {
 		$next_tweet_time = time()+ get_option('top_opt_interval') * 60 * 60;
 		update_option('next_tweet_time', $next_tweet_time);
 
-           
+            //random interval
+            if (isset($_POST['top_opt_interval_slop'])) {
+                if (is_numeric($_POST['top_opt_interval_slop']) && $_POST['top_opt_interval_slop'] > 0) {
+                    update_option('top_opt_interval_slop', $_POST['top_opt_interval_slop']);
+                } else {
+                    update_option('top_opt_interval_slop', "4");
+                }
+            }
 
             //minimum post age to tweet
             if (isset($_POST['top_opt_age_limit'])) {
@@ -406,7 +413,10 @@ function top_admin() {
         }
 
         //random interval
-       
+        $slop = get_option('top_opt_interval_slop');
+        if (!(isset($slop) && is_numeric($slop))) {
+            $slop = top_opt_INTERVAL_SLOP;
+        }
 
         //min age limit
         $ageLimit = get_option('top_opt_age_limit');
@@ -440,7 +450,7 @@ function top_admin() {
 
         print('
 			<div class="wrap">
-				<h2>' . __('Tweetily - Tweet WP Posts Automatically by - ', 'Tweetily') . ' <a href="http://winthecustomer.com" alt="Win the Customer!">Flavio Martins - WintheCustomer.com</a></h2>
+				<h2>' . __('Tweetily - Tweet WP Posts Automatically by - ', 'Tweetily') . ' <a href="http://thecustomerservicemanager.com">Flavio Martins</a></h2>
 <h3>If you like this plugin, follow <a href="http://www.twitter.com/flavmartins">@flavmartins</a> on Twitter to help keep this plugin free...FOREVER!</h3>
 
 <a href="https://twitter.com/flavmartins" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @flavmartins</a>
@@ -516,7 +526,7 @@ function top_admin() {
 							</select>
 						</div>
                                                 
-						<div id="urloptions" >
+						<div id="urloptions" style="display:none">
 						
                                                 
 						
@@ -540,7 +550,7 @@ function top_admin() {
 									<option value="tinyurl" ' . top_opt_optionselected('tinyurl', $url_shortener) . '>' . __('tinyurl', 'Tweetily') . '</option>
 							</select>
 						</div>
-						<div id="showDetail" >
+						<div id="showDetail" style="display:none">
 							<div class="option">
 								<label for="top_opt_bitly_user">' . __('bit.ly Username', 'Tweetily') . ':</label>
 								<input type="text" size="25" name="top_opt_bitly_user" id="top_opt_bitly_user" value="' . $bitly_username . '" autocomplete="off" />
@@ -568,7 +578,7 @@ function top_admin() {
 							
                                                         
 						</div>
-						<div id="inlinehashtag" >
+						<div id="inlinehashtag" style="display:none;">
 						<div class="option">
 							<label for="top_opt_use_inline_hashtags">' . __('Use inline hashtags: ', 'Tweetily') . '</label>
 							<input type="checkbox" name="top_opt_use_inline_hashtags" id="top_opt_use_inline_hashtags" ' . $use_inline_hashtags . ' /> 
@@ -581,7 +591,7 @@ function top_admin() {
                                                        <strong>(If 0, all hashtags will be included.)</strong>
 						</div>
 						</div>
-						<div id="customhashtag" >
+						<div id="customhashtag" style="display:none;">
 						<div class="option">
 							<label for="top_opt_custom_hashtag_field">' . __('Custom field name', 'Tweetily') . ':</label>
 							<input type="text" size="25" name="top_opt_custom_hashtag_field" id="top_opt_custom_hashtag_field" value="' . $custom_hashtag_field . '" autocomplete="off" />
@@ -589,7 +599,7 @@ function top_admin() {
 						</div>
 						
 						</div>
-                                                <div id="commonhashtag" >
+                                                <div id="commonhashtag" style="display:none;">
 						<div class="option">
 							<label for="top_opt_hashtags">' . __('Common #hashtags for your tweets', 'Tweetily') . ':</label>
 							<input type="text" size="25" name="top_opt_hashtags" id="top_opt_hashtags" value="' . $twitter_hashtags . '" autocomplete="off" />
@@ -601,7 +611,11 @@ function top_admin() {
 							<input type="text" id="top_opt_interval" maxlength="5" value="' . $interval . '" name="top_opt_interval" /> Hour / Hours <strong>(If 0, it will default to 4 hours.)</strong>
                                                        
 						</div>
-						
+						<div class="option" >
+							<label for="top_opt_interval_slop">' . __('Random Time Added: <br /><span class="desc">Random time added to make your post normal.<span>', 'Tweetily') . '</label>
+							<input type="text" id="top_opt_interval_slop" maxlength="5" value="' . $slop . '" name="top_opt_interval_slop" /> Hour / Hours <strong>(If 0, it will default to 4 hours.)</strong>
+                                                            
+						</div>
 						<div class="option" >
 							<label for="top_opt_age_limit">' . __('Minimum age of post: <br /><span class="desc">Include post in tweets if at least this age.<span>', 'Tweetily') . '</label>
 							<input type="text" id="top_opt_age_limit" maxlength="5" value="' . $ageLimit . '" name="top_opt_age_limit" /> Day / Days
@@ -627,31 +641,17 @@ function top_admin() {
 						</div>
 						
 						<div class="option">
-						<label class="ttip">Select post type: <span class="desc">What type of items do you want to share?<span></label>');
+						<label class="ttip">Select post type: <span class="desc">What type of items do you want to share?<span></label>
 
 
-$args=array(
-  'public'   => true,
-  '_builtin' => false
-); 
-$output = 'names'; // names or objects, note names is the default
-$operator = 'and'; // 'and' or 'or'
-$post_types=get_post_types($args,$output,$operator); 
-  
-?>
 						<select name="as_post_type">
 							<option value="post">Only Posts</option>
 							<option value="page">Only Pages</option>
-							<?php
-							foreach ($post_types  as $post_type ) {
-								echo '<option value="'.$post_type.'">'. $post_type. '</option>';
-							  }
-							?>
-							<option value="all">All Posts & Pages</option>
-						</select><?php echo "Currently sharing:&nbsp;$as_post_type";?>
+							<option value="all">Both Posts & Pages</option>
+						</select> Currently sharing:&nbsp;'.$as_post_type.'
 						</div>
-                         <?php               
-				    	echo('<div class="option category">
+                                        
+				    	<div class="option category">
 				    	<div style="float:left">
 						    	<label class="catlabel">' . __('Exclude Categories: <span class="desc">Check categories not to share.<span>', 'Tweetily') . '</label> </div>
 						    	<div style="float:left">
@@ -722,7 +722,12 @@ function validate()
 		document.getElementById("top_opt_interval").focus();
 		return false;
         }
-        
+         if(trim(document.getElementById("top_opt_interval_slop").value) != "" && !isNumber(trim(document.getElementById("top_opt_interval_slop").value)))
+        {
+            alert("Enter only numeric in Random interval");
+		document.getElementById("top_opt_interval_slop").focus();
+		return false;
+        }
         if(trim(document.getElementById("top_opt_age_limit").value) != "" && !isNumber(trim(document.getElementById("top_opt_age_limit").value)))
         {
             alert("Enter only numeric in Minimum age of post");
@@ -883,4 +888,3 @@ function top_opt_head_admin() {
 }
 
 ?>
-
