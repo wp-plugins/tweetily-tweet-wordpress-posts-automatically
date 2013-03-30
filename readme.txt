@@ -5,7 +5,7 @@ Donate link: http://winthecustomer.com/
 Tags: Tweetily, Tweet Posts, Twitter, Promote Posts, Tweet Random Post, Share Post, Promote Post, Auto Tweet, Post Tweets, Wordpress Twitter, Traffic, Auto Traffic, Tweet Old Post, Wordpress Twitter Plugin, Twitter Plugin, Tweet Selected Posts
 Requires at least: 2.7
 Tested up to: 3.5.1
-Stable tag: 3.3
+Stable tag: 3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,19 @@ Tweetily is the RELOADED version of the Tweet Old Post plugin by Ajay Matharuaja
 I'd love to hear your thoughts or ideas! http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
 
 Want to get in touch right away? Let's connect! http://twitter.com/flavmartins
+
+*** Version 3.5 ***
+
+-Bug fixes
+
+*** Version 3.4 ***
+
+- General plugin updates
+- Code clean up
+- Updated stylesheet
+- Updated Dropbox compatibility with BackWPUp plugin
+- Updated default settings
+- General bug fixes
 
 *** Version 3.3 ***
 
@@ -176,6 +189,19 @@ http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
 
 == Upgrade Notice ==
 
+= 3.5 =
+
+-Bug fixes
+
+= 3.4 =
+
+- General plugin updates
+- Code clean up
+- Updated stylesheet
+- Updated Dropbox compatibility with BackWPUp plugin
+- Updated default settings
+- General bug fixes
+
 = 3.3 =
 
 - Fixed Dropbox authentication when using the BackWPUp plugin.
@@ -229,6 +255,19 @@ http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
 
 
 == Changelog ==
+
+*** Version 3.5 ***
+
+- Bug fixes
+
+*** Version 3.4 ***
+
+- General plugin updates
+- Code clean up
+- Updated stylesheet
+- Updated Dropbox compatibility with BackWPUp plugin
+- Updated default settings
+- General bug fixes
 
 ***Version 3.3***
 

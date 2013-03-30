@@ -567,7 +567,7 @@ function top_reset_settings()
     update_option('top_enable_log','');
 update_option('top_opt_add_text','');
 update_option('top_opt_add_text_at','beginning');
-update_option('top_opt_age_limit',30);
+update_option('top_opt_age_limit',0);
 update_option('top_opt_bitly_key','');
 update_option('top_opt_bitly_user','');
 update_option('top_opt_custom_hashtag_field','');
@@ -581,7 +581,7 @@ update_option('top_opt_include_link','no');
 update_option('top_opt_interval',4);
 update_option('top_opt_interval_slop',4);
 delete_option('top_opt_last_update');
-update_option('top_opt_max_age_limit',60);
+update_option('top_opt_max_age_limit',0);
 update_option('top_opt_omit_cats','');
 update_option('top_opt_tweet_type','title');
 delete_option('top_opt_tweeted_posts');

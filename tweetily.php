@@ -1,11 +1,11 @@
 <?php   
      /* 
      Plugin Name: Tweetily 
-     Plugin URI: http://thecustomerservicemanager.com/tweetily-tweet-wordpress-post-automatically/
-     Description: Tweetily will periodically tweet a random post or page automatically to promote your content and drive traffic to your Web site! You set the time, number of tweets, and just let Tweetily do the rest! For questions, comments, or feature requests, contact me! <a href="http://thecustomerservicemanager.com/">http://thecustomerservicemanager.com</a>.
+     Plugin URI: http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
+     Description: Tweetily will periodically tweet a random post or page automatically to promote your content and drive traffic to your Web site! You set the time, number of tweets, and just let Tweetily do the rest! For questions, comments, or feature requests, contact me! <a href="http://winthecustomer.com/">http://winthecustomer.com</a>.
      Author: Flavio Martins
-     Version: 3.2
-     Author URI: http://thecustomerservicemanager.com/
+     Version: 3.5
+     Author URI: http://winthecustomer.com/
     */  
 
 
