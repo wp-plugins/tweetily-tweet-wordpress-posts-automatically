@@ -4,10 +4,9 @@
      Plugin URI: http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
      Description: Tweetily will periodically tweet a random post or page automatically to promote your content and drive traffic to your Web site! You set the time, number of tweets, and just let Tweetily do the rest! For questions, comments, or feature requests, contact me! <a href="http://winthecustomer.com/">http://winthecustomer.com</a>.
      Author: Flavio Martins
-     Version: 3.5
+     Version: 4.0
      Author URI: http://winthecustomer.com/
     */  
-
 
 
 register_activation_hook( __FILE__, 'as_tw_install' );

@@ -5,7 +5,7 @@ Donate link: http://winthecustomer.com/
 Tags: Tweetily, Tweet Posts, Twitter, Promote Posts, Tweet Random Post, Share Post, Promote Post, Auto Tweet, Post Tweets, Wordpress Twitter, Traffic, Auto Traffic, Tweet Old Post, Wordpress Twitter Plugin, Twitter Plugin, Tweet Selected Posts
 Requires at least: 2.7
 Tested up to: 3.5.1
-Stable tag: 3.5
+Stable tag: 4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,9 +33,13 @@ I'd love to hear your thoughts or ideas! http://winthecustomer.com/tweetily-twee
 
 Want to get in touch right away? Let's connect! http://twitter.com/flavmartins
 
+*** Version 4.0 ***
+
+- Updated to use Twitter's new API connection.
+
 *** Version 3.5 ***
 
--Bug fixes
+- Bug fixes
 
 *** Version 3.4 ***
 
@@ -189,9 +193,13 @@ http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
 
 == Upgrade Notice ==
 
+= Version 4.0 =
+
+- Updated to use Twitter's new API connection.
+
 = 3.5 =
 
--Bug fixes
+- Bug fixes
 
 = 3.4 =
 
@@ -256,6 +264,10 @@ http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
 
 == Changelog ==
 
+*** Version 4.0 ***
+
+- Updated to use Twitter's new API connection.
+
 *** Version 3.5 ***
 
 - Bug fixes
@@ -300,7 +312,6 @@ http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
 - Removed testing code that caused problems with some Web hosts.
 - Tweaks to authentication for 1and1 Web hosting accounts. 
 
-
 ***Version 2.2***
 
 - More caching plugin fixes.
@@ -328,4 +339,5 @@ http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
 - Updated sleep time!
 - Select the number of tweets to share at a time!
 - Works with caching plugins! (WP Super Cache & W3 Total Cache)
+
 
