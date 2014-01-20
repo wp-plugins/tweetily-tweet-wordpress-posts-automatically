@@ -9,10 +9,10 @@ require_once( 'top-debug.php' );
 define('TOP_OAUTH_CONSUMER_KEY', 'x1f7w1y3gu8WFMgWramMQ');
 
 
-define('TOP_OAUTH_REQUEST_URL', 'http://api.twitter.com/oauth/request_token');
-define('TOP_OAUTH_ACCESS_URL', 'http://api.twitter.com/oauth/access_token');
-define('TOP_OAUTH_AUTHORIZE_URL', 'http://api.twitter.com/oauth/authorize');
-define('TOP_OAUTH_REALM', 'http://twitter.com/');
+define('TOP_OAUTH_REQUEST_URL', 'https://api.twitter.com/oauth/request_token');
+define('TOP_OAUTH_ACCESS_URL', 'https://api.twitter.com/oauth/access_token');
+define('TOP_OAUTH_AUTHORIZE_URL', 'https://api.twitter.com/oauth/authorize');
+define('TOP_OAUTH_REALM', 'https://twitter.com/');
 
 class TOPOAuth {
 
@@ -298,7 +298,7 @@ class TOPOAuth {
         
         TOP_DEBUG( 'In function get_request_token' );
         $params['oauth_consumer_key'] = TOP_OAUTH_CONSUMER_KEY;
-        //$params['oauth_callback'] = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . '&TOP_oauth=1';
+        //$params['oauth_callback'] = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . '&TOP_oauth=1';
         $params['oauth_callback'] = htmlentities($admin_url . '&TOP_oauth=1');
         
         $params['oauth_signature_method'] = 'HMAC-SHA1';

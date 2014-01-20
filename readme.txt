@@ -4,8 +4,8 @@ Contributors: themanagr
 Donate link: http://winthecustomer.com/
 Tags: Tweetily, Tweet Posts, Twitter, Promote Posts, Tweet Random Post, Share Post, Promote Post, Auto Tweet, Post Tweets, Wordpress Twitter, Traffic, Auto Traffic, Tweet Old Post, Wordpress Twitter Plugin, Twitter Plugin, Tweet Selected Posts
 Requires at least: 2.7
-Tested up to: 3.5.1
-Stable tag: 4.0
+Tested up to: 3.8
+Stable tag: 4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,10 @@ Tweetily is the RELOADED version of the Tweet Old Post plugin by Ajay Matharuaja
 I'd love to hear your thoughts or ideas! http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
 
 Want to get in touch right away? Let's connect! http://twitter.com/flavmartins
+
+*** Version 4.1 ***
+
+- Fixed Twitter Login Bug (YIPEE!!!)
 
 *** Version 4.0 ***
 
@@ -180,7 +184,6 @@ Do you have plans to add more to this?
 If you have any questions, submit a comment online at: http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
 
 
-
 == Screenshots ==
 
 1. Screenshot 1 shows your basic settings for Tweetily, including the countdown to the next tweet and other tweet options.
@@ -192,6 +195,10 @@ For more screenshots you can check out:
 http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
 
 == Upgrade Notice ==
+
+= Version 4.1 =
+
+- Updated Twitter Login Bug
 
 = Version 4.0 =
 
@@ -263,6 +270,10 @@ http://winthecustomer.com/tweetily-tweet-wordpress-post-automatically/
 
 
 == Changelog ==
+
+*** Version 4.1 ***
+
+- Fixed Twitter Login Bug
 
 *** Version 4.0 ***
 
