@@ -54,7 +54,7 @@ class topDebug {
 }
 
 global $top_debug;
-$top_debug = &new topDebug;
+$top_debug = new topDebug;
 
 
 ?>
