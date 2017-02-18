@@ -299,7 +299,7 @@ class TOPOAuth {
         TOP_DEBUG( 'In function get_request_token' );
         $params['oauth_consumer_key'] = TOP_OAUTH_CONSUMER_KEY;
         //$params['oauth_callback'] = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . '&TOP_oauth=1';
-        $params['oauth_callback'] = htmlentities($admin_url . '&TOP_oauth=1');
+        $params['oauth_callback'] = $admin_url . '&TOP_oauth=1';
         
         $params['oauth_signature_method'] = 'HMAC-SHA1';
         $params['oauth_timestamp'] = time();
@@ -311,6 +311,7 @@ class TOPOAuth {
 		}
         
         $result = $this->do_oauth(TOP_OAUTH_REQUEST_URL, $params);
+			//TOP_DEBUG( '..response is ' . $result );	
 
         if ($result) {
             $new_params = $this->parse_params($result);
